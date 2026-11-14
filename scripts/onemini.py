@@ -54,13 +54,24 @@ def json_read(path):
         raise ClientError("无法读取 JSON 文件，请检查路径及 JSON 格式。", path=str(path), diagnostic=str(exc)) from None
 
 
+def replace_file(source, target):
+    """实测 Windows 短暂拒绝原子替换；仅重试本地写盘，不重发 API 请求。"""
+    for attempt in range(4):
+        try:
+            os.replace(source, target)
+            return
+        except PermissionError as exc:
+            if getattr(exc, "winerror", None) != 5 or attempt == 3:
+                raise
+            time.sleep(0.025 * (attempt + 1))
+
 def json_write(path, data):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
     temporary = path.with_name(path.name + ".tmp")
     try:
         temporary.write_text(json.dumps(sanitize(data), ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        os.replace(temporary, path)
+        replace_file(temporary, path)
     finally:
         temporary.unlink(missing_ok=True)
 

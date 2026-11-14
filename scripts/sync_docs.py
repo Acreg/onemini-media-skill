@@ -15,6 +15,8 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
+from onemini import replace_file
+
 ROOT = Path(__file__).resolve().parent.parent
 ORIGIN = "https://docs-api.onemini.top"
 INDEX = ORIGIN + "/llms.txt"
@@ -44,7 +46,7 @@ def atomic_write(path, data):
     temporary = path.with_name(path.name + ".tmp")
     try:
         temporary.write_bytes(data)
-        os.replace(temporary, path)
+        replace_file(temporary, path)
     finally:
         temporary.unlink(missing_ok=True)
 

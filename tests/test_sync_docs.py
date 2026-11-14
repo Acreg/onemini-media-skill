@@ -70,11 +70,24 @@ class SyncTests(unittest.TestCase):
         self.temp.cleanup()
 
     def installed(self):
-        return {path.relative_to(self.root).as_posix(): path.read_bytes() for path in self.root.rglob("*") if path.is_file() and ".cache" not in path.parts}
+        return {path.relative_to(self.root).as_posix(): path.read_bytes() for path in self.root.rglob("*") if path.is_file() and ".cache" not in path.relative_to(self.root).parts}
 
     def change_body(self):
         url = docs.ORIGIN + "/100m0.md"
         self.remote[url] += "\n新参数：保持精确字段。\n".encode()
+
+    def test_installed_snapshot_ignores_only_root_relative_cache(self):
+        original = self.root
+        nested = original / ".cache" / "nested-install"
+        nested.mkdir(parents=True)
+        (nested / "SKILL.md").write_bytes(b"installed skill")
+        (nested / ".cache").mkdir()
+        (nested / ".cache" / "state.json").write_bytes(b"ignored runtime")
+        self.root = nested
+        try:
+            self.assertEqual(self.installed(), {"SKILL.md": b"installed skill"})
+        finally:
+            self.root = original
 
     def test_not_due_no_network(self):
         self.manifest["snapshot_at"] = NOW.isoformat()

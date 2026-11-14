@@ -95,6 +95,37 @@ class ClientTests(unittest.TestCase):
             self.client.request("GET", "/v1/media/models")
         self.assertEqual(transport.calls, [])
 
+    def test_atomic_file_replace_transient_windows_lock_is_bounded(self):
+        target = self.root / "lock.json"
+        media.json_write(target, {"state": "old"})
+        original_replace = media.os.replace
+        locked = PermissionError("temporary file access denied")
+        locked.winerror = 5
+        attempts = []
+
+        def transient(source, destination):
+            attempts.append(destination)
+            if len(attempts) == 1:
+                raise locked
+            return original_replace(source, destination)
+
+        with patch.object(media.os, "replace", side_effect=transient), patch.object(media.time, "sleep") as sleep:
+            media.json_write(target, {"state": "new"})
+        self.assertEqual(media.json_read(target), {"state": "new"})
+        self.assertEqual(len(attempts), 2)
+        sleep.assert_called_once_with(0.025)
+        with patch.object(media.os, "replace", side_effect=locked) as replace, patch.object(media.time, "sleep") as sleep:
+            with self.assertRaises(PermissionError):
+                media.json_write(target, {"state": "must not appear"})
+        self.assertEqual(replace.call_count, 4)
+        self.assertEqual(sleep.call_count, 3)
+        self.assertEqual(media.json_read(target), {"state": "new"})
+        with patch.object(media.os, "replace", side_effect=PermissionError("permanent permission")) as replace, patch.object(media.time, "sleep") as sleep:
+            with self.assertRaises(PermissionError):
+                media.json_write(target, {"state": "must not appear"})
+        self.assertEqual(replace.call_count, 1)
+        sleep.assert_not_called()
+
     def test_sync_base64_and_transparent_parameters(self):
         transport = self.transport([{"data": [{"b64_json": base64.b64encode(PNG).decode()}]}])
         parameters = {"model": "gpt-image-2.6-ext", "prompt": "猫", "custom": {"flag": False, "array": [1, "2"]}, "seed": 0}
