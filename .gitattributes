@@ -1,0 +1,3 @@
+* text=auto eol=lf
+# 快照摘要基于原文字节，不让Git换行转换制造假更新。
+references/** -text

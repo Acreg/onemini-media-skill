@@ -1,0 +1,18 @@
+# 本地凭据和运行数据
+*.env
+.env
+.env.*
+!*.env.example
+.cache/
+outputs/
+output/
+task-*.json
+*.log
+__pycache__/
+*.py[cod]
+.venv/
+# 本地开发流程，不随用户技能分发
+.agents/
+.specify/
+specs/
+AGENTS.md

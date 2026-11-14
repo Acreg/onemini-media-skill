@@ -1,0 +1,439 @@
+{
+  "schema_version": 1,
+  "snapshot_at": "2026-11-15T02:26:08+08:00",
+  "source_index": "https://docs-api.onemini.top/llms.txt",
+  "source_index_sha256": "c92c7ec0ddda45337162a147d577294d717692d228a7575945cb33188b7c7bce",
+  "check_interval_days": 7,
+  "pages": [
+    {
+      "id": "9683548m0",
+      "title": "媒体任务查询、结果下载与请求停止",
+      "kind": "common",
+      "url": "https://docs-api.onemini.top/9683548m0.md",
+      "path": "references/tasks.md",
+      "sha256": "d964eba42daafd63ee93642408d5f5e977ee18120b4cde0aa34e18cf874b66b1",
+      "model_ids": []
+    },
+    {
+      "id": "9683549m0",
+      "title": "多媒体 API 快速开始与模型总览",
+      "kind": "common",
+      "url": "https://docs-api.onemini.top/9683549m0.md",
+      "path": "references/quickstart.md",
+      "sha256": "70f30e7ca25be258156c0e62327030eb0300aee0de93cbc460dc3bb254db1c9d",
+      "model_ids": []
+    },
+    {
+      "id": "9683550m0",
+      "title": "GPT Image 2.5 / 2.6：生成、编辑、GIF 与 SVG",
+      "kind": "image",
+      "url": "https://docs-api.onemini.top/9683550m0.md",
+      "path": "references/images/9683550m0.md",
+      "sha256": "3ba4e04f8a3fef09ff3ebfe70146f63c633b2d852092413f398bb1f227bf7627",
+      "model_ids": [
+        "gpt-image-2.5-ext",
+        "gpt-image-2.5-flare",
+        "gpt-image-2.5-sunburst",
+        "gpt-image-2.6-ext",
+        "gpt-image-2.6-flare",
+        "gpt-image-2.6-sunburst"
+      ]
+    },
+    {
+      "id": "9683551m0",
+      "title": "Gemini 与 Nano Banana 图片模型",
+      "kind": "image",
+      "url": "https://docs-api.onemini.top/9683551m0.md",
+      "path": "references/images/9683551m0.md",
+      "sha256": "c446be258be0f599e80dd8ea44192865d9763402693f5933acb738d88037e650",
+      "model_ids": [
+        "gemini-2.5-flash-image-preview",
+        "gemini-2.5-flash-image-preview-official",
+        "gemini-3-pro-image-preview",
+        "gemini-3-pro-image-preview-official",
+        "gemini-3.1-flash-image-preview",
+        "gemini-3.1-flash-image-preview-official",
+        "gemini-3.1-flash-lite-image",
+        "gemini-3.1-flash-lite-image-ext",
+        "gemini-nano-banana-2.1",
+        "gemini-nano-banana-2.1-ext"
+      ]
+    },
+    {
+      "id": "9683552m0",
+      "title": "GPT Image 基础系列与 DALL·E",
+      "kind": "image",
+      "url": "https://docs-api.onemini.top/9683552m0.md",
+      "path": "references/images/9683552m0.md",
+      "sha256": "1d3b2ebce8fcddf02c9c7169466a2722dd785c8a47cb69ed150db74373a73d00",
+      "model_ids": [
+        "dall-e-3",
+        "gpt-image-1",
+        "gpt-image-1-official",
+        "gpt-image-1.5",
+        "gpt-image-1.5-official",
+        "gpt-image-2",
+        "gpt-image-2-official"
+      ]
+    },
+    {
+      "id": "9683553m0",
+      "title": "Flux：Kontext、2 系列与 3 系列",
+      "kind": "image",
+      "url": "https://docs-api.onemini.top/9683553m0.md",
+      "path": "references/images/9683553m0.md",
+      "sha256": "5f40dcf4e38e4df4309638665f457c3037565d26411154b16b7cb905f05b336b",
+      "model_ids": [
+        "flux-2-flex",
+        "flux-2-max",
+        "flux-2-pro",
+        "flux-3-image",
+        "flux-3-image-klein",
+        "flux-kontext-max",
+        "flux-kontext-pro"
+      ]
+    },
+    {
+      "id": "9683554m0",
+      "title": "Seedream：文生图、参考图、透明背景与分层",
+      "kind": "image",
+      "url": "https://docs-api.onemini.top/9683554m0.md",
+      "path": "references/images/9683554m0.md",
+      "sha256": "220e6df0bb8b6c3269808457a0bc107a5332b2b1c13aeb915846e7c0601befaa",
+      "model_ids": [
+        "seedream-4-0",
+        "seedream-4-5",
+        "seedream-5-0-flash",
+        "seedream-5-0-lite",
+        "seedream-5-0-pro",
+        "seedream-5-5"
+      ]
+    },
+    {
+      "id": "9683555m0",
+      "title": "Grok：图片生成、分层与区域编辑",
+      "kind": "image",
+      "url": "https://docs-api.onemini.top/9683555m0.md",
+      "path": "references/images/9683555m0.md",
+      "sha256": "67e0b8e6c9e79ee5b1e48f0502017c75306140211430a9731e450d8b36d2e29e",
+      "model_ids": [
+        "grok-imagine-1.0-apimart",
+        "grok-imagine-1.0-edit-apimart",
+        "grok-imagine-1.5-apimart",
+        "grok-imagine-1.5-edit-apimart",
+        "grok-imagine-2.0-ext",
+        "grok-imagine-image",
+        "grok-imagine-image-2.0",
+        "grok-imagine-image-quality"
+      ]
+    },
+    {
+      "id": "9683556m0",
+      "title": "Wan 2.7 图片系列",
+      "kind": "image",
+      "url": "https://docs-api.onemini.top/9683556m0.md",
+      "path": "references/images/9683556m0.md",
+      "sha256": "8b8e67a8c7fd8731b3ea31860d2eeb9dd973537ef0d1463296305897fa374dcc",
+      "model_ids": [
+        "wan2.7-image",
+        "wan2.7-image-pro"
+      ]
+    },
+    {
+      "id": "9683557m0",
+      "title": "Qwen Image 与 Z Image",
+      "kind": "image",
+      "url": "https://docs-api.onemini.top/9683557m0.md",
+      "path": "references/images/9683557m0.md",
+      "sha256": "d5b701736c3afa1bf516000b011b2a9d0e3ca783feab28a710b6956436e09d4c",
+      "model_ids": [
+        "qwen-image-2.0",
+        "qwen-image-2.0-pro",
+        "qwen-image-3.0",
+        "qwen-image-3.0-pro",
+        "z-image-turbo"
+      ]
+    },
+    {
+      "id": "9683558m0",
+      "title": "MiniMax H3 图片系列",
+      "kind": "image",
+      "url": "https://docs-api.onemini.top/9683558m0.md",
+      "path": "references/images/9683558m0.md",
+      "sha256": "a4c60d54e7374ac21e61d35e2c4fb2811ef311322334bd7b7368413214172b48",
+      "model_ids": [
+        "minimax-h3-image",
+        "minimax-h3-image-highspeed"
+      ]
+    },
+    {
+      "id": "9683559m0",
+      "title": "Imagen、混元、MAI 与 Muse 图片模型",
+      "kind": "image",
+      "url": "https://docs-api.onemini.top/9683559m0.md",
+      "path": "references/images/9683559m0.md",
+      "sha256": "d1cf8a1945347ada34aed3150cf5f0363a1eb728990791485acb4c6596d08357",
+      "model_ids": [
+        "hy-image-v3.5-preview",
+        "imagen-4.0-apimart",
+        "mai-image-2.6",
+        "mai-image-2.6-flash",
+        "muse-image-ext"
+      ]
+    },
+    {
+      "id": "9683560m0",
+      "title": "Midjourney：模型参数与本站路由边界",
+      "kind": "image",
+      "url": "https://docs-api.onemini.top/9683560m0.md",
+      "path": "references/images/9683560m0.md",
+      "sha256": "75bebd416cd369c6701ae0c3c8c75d1ff9b993341884a76667f8f87aac644626",
+      "model_ids": [
+        "midjourney"
+      ]
+    },
+    {
+      "id": "9683561m0",
+      "title": "Seedance 1.0 Pro 视频",
+      "kind": "video",
+      "url": "https://docs-api.onemini.top/9683561m0.md",
+      "path": "references/videos/9683561m0.md",
+      "sha256": "bc9d4b4974b6bd0cb5db53d7c4b041b7255419109bbc300f0488fc93379d8aa9",
+      "model_ids": [
+        "seedance-1-0-pro-fast",
+        "seedance-1-0-pro-quality"
+      ]
+    },
+    {
+      "id": "9683562m0",
+      "title": "Seedance 2.0 多模态与 face 变体",
+      "kind": "video",
+      "url": "https://docs-api.onemini.top/9683562m0.md",
+      "path": "references/videos/9683562m0.md",
+      "sha256": "c65b9512b375d76305f41b5a997eb23951978bb9940615623ca3c6196b3f6849",
+      "model_ids": [
+        "seedance-2.0",
+        "seedance-2.0-fast",
+        "seedance-2.0-mini",
+        "seedance-2.0-face",
+        "seedance-2.0-fast-face"
+      ]
+    },
+    {
+      "id": "9683563m0",
+      "title": "Seedance 2.5 多模态、草稿、编辑与续写",
+      "kind": "video",
+      "url": "https://docs-api.onemini.top/9683563m0.md",
+      "path": "references/videos/9683563m0.md",
+      "sha256": "e7eaebc5e2d41545d3c3f94952a04bc9eeef8acbc4ed36e71a89bfd3ca49a889",
+      "model_ids": [
+        "seedance-2.5"
+      ]
+    },
+    {
+      "id": "9683564m0",
+      "title": "Zoe 多模态视频与草稿转正式",
+      "kind": "video",
+      "url": "https://docs-api.onemini.top/9683564m0.md",
+      "path": "references/videos/9683564m0.md",
+      "sha256": "d01c08869bd34076463e8205ccaf9e7951d2156db51e160bb367894433a0cc17",
+      "model_ids": [
+        "apimart-zoe"
+      ]
+    },
+    {
+      "id": "9683565m0",
+      "title": "Veo 3.1 普通版与 official 版",
+      "kind": "video",
+      "url": "https://docs-api.onemini.top/9683565m0.md",
+      "path": "references/videos/9683565m0.md",
+      "sha256": "3e04ab989afa84eb328c666b51696c845b1c0510933d7ec00aa6409b53a9ac59",
+      "model_ids": [
+        "veo3.1-fast",
+        "veo3.1-quality",
+        "veo3.1-lite",
+        "veo3.1-fast-official",
+        "veo3.1-quality-official"
+      ]
+    },
+    {
+      "id": "9683566m0",
+      "title": "Kling 视频、多镜头、动作控制与 V4",
+      "kind": "video",
+      "url": "https://docs-api.onemini.top/9683566m0.md",
+      "path": "references/videos/9683566m0.md",
+      "sha256": "e706e8720c9519dd845a3d4966dcd5cabe8b573f6b60aec0ea232bf4f279904d",
+      "model_ids": [
+        "kling-v2-6",
+        "kling-v3",
+        "kling-3.0-turbo",
+        "kling-v3-omni",
+        "kling-video-o1",
+        "kling-v2-6-motion-control",
+        "kling-v3-motion-control",
+        "kling-v4",
+        "kling-v4-flash"
+      ]
+    },
+    {
+      "id": "9683567m0",
+      "title": "Wan 2.5、2.6、2.7 与 3.0 视频",
+      "kind": "video",
+      "url": "https://docs-api.onemini.top/9683567m0.md",
+      "path": "references/videos/9683567m0.md",
+      "sha256": "3766d8b331c2873c3c6d13b7636a07d855a01589198f61c9b75a844c8658b626",
+      "model_ids": [
+        "wan2.5-preview",
+        "wan2.6",
+        "wan2.6-i2v",
+        "wan2.6-i2v-flash",
+        "wan2.7",
+        "wan2.7-r2v",
+        "wan2.7-videoedit",
+        "wan3.0-video",
+        "wan3.0-video-prime"
+      ]
+    },
+    {
+      "id": "9683568m0",
+      "title": "MiniMax Hailuo 与 H3 系列",
+      "kind": "video",
+      "url": "https://docs-api.onemini.top/9683568m0.md",
+      "path": "references/videos/9683568m0.md",
+      "sha256": "3eed2a1d1f13a550bb9d6d118bdace77eebc858cd4b1fed044fc38a541d6b0f4",
+      "model_ids": [
+        "MiniMax-Hailuo-02",
+        "MiniMax-Hailuo-2.3",
+        "MiniMax-Hailuo-2.3-Fast",
+        "MiniMax-H3",
+        "MiniMax-H3-Max",
+        "MiniMax-H3-Context-IR",
+        "MiniMax-H3-Regeneration"
+      ]
+    },
+    {
+      "id": "9683569m0",
+      "title": "Grok 视频：标准型号与独立变体",
+      "kind": "video",
+      "url": "https://docs-api.onemini.top/9683569m0.md",
+      "path": "references/videos/9683569m0.md",
+      "sha256": "7dd4ed0943b3c957dcf62c4005e0c4d3e6d78d9a7f0f964faad0d3bcbbe4e747",
+      "model_ids": [
+        "grok-imagine-video",
+        "grok-imagine-video-1.5",
+        "grok-imagine-1.0-video-apimart",
+        "grok-imagine-1.5-video-apimart"
+      ]
+    },
+    {
+      "id": "9683570m0",
+      "title": "Gemini Omni 视频与 Omni-Flash-Ext",
+      "kind": "video",
+      "url": "https://docs-api.onemini.top/9683570m0.md",
+      "path": "references/videos/9683570m0.md",
+      "sha256": "4dc6efafe6f7f9bf3eeb4cc9cfb0063310617974613b6434bafb1d3b4dc57fee",
+      "model_ids": [
+        "gemini-omni-1.1-flash",
+        "gemini-omni-1.2-flash",
+        "gemini-omni-1.2-flash-ext",
+        "gemini-omni-flash-preview",
+        "Omni-Flash-Ext"
+      ]
+    },
+    {
+      "id": "9683571m0",
+      "title": "Flux 3 视频与草稿转正式",
+      "kind": "video",
+      "url": "https://docs-api.onemini.top/9683571m0.md",
+      "path": "references/videos/9683571m0.md",
+      "sha256": "9445616b3745c4611c2f33867440349e3407db1de18ffcf027f83b86faba6e23",
+      "model_ids": [
+        "flux-3-video"
+      ]
+    },
+    {
+      "id": "9683572m0",
+      "title": "HappyHorse 视频与参考视频编辑",
+      "kind": "video",
+      "url": "https://docs-api.onemini.top/9683572m0.md",
+      "path": "references/videos/9683572m0.md",
+      "sha256": "b0bc5c3394e0d067b9272b09be121305faf39fee9de622b7bbaa8dd759b866cf",
+      "model_ids": [
+        "happyhorse-1.0",
+        "happyhorse-1.1"
+      ]
+    },
+    {
+      "id": "9683573m0",
+      "title": "SkyReels V4 图片、视频与中间帧参考",
+      "kind": "video",
+      "url": "https://docs-api.onemini.top/9683573m0.md",
+      "path": "references/videos/9683573m0.md",
+      "sha256": "f8da342d2bd1df2120c46a9741dcf8f17418a85613a75f4f5649947ac066c0c2",
+      "model_ids": [
+        "skyreels-v4-fast",
+        "skyreels-v4-std"
+      ]
+    },
+    {
+      "id": "9683574m0",
+      "title": "Vidu Q3 与 Q4 视频",
+      "kind": "video",
+      "url": "https://docs-api.onemini.top/9683574m0.md",
+      "path": "references/videos/9683574m0.md",
+      "sha256": "952f978d7fb8d1dbc06431ba38066cc9449a9462566cf18e7f71b9721803a113",
+      "model_ids": [
+        "viduq3",
+        "viduq3-mix",
+        "viduq3-pro",
+        "viduq3-turbo",
+        "viduq4-preview"
+      ]
+    },
+    {
+      "id": "9683575m0",
+      "title": "PixVerse V6、Max 与续写",
+      "kind": "video",
+      "url": "https://docs-api.onemini.top/9683575m0.md",
+      "path": "references/videos/9683575m0.md",
+      "sha256": "2d2888fb87f14e327cd6214b210146fae9f03db60d4b50c7d7b130a956ddeb88",
+      "model_ids": [
+        "pixverse-v6",
+        "pixverse-v6-max"
+      ]
+    },
+    {
+      "id": "9683576m0",
+      "title": "Muse Video Ext 视频",
+      "kind": "video",
+      "url": "https://docs-api.onemini.top/9683576m0.md",
+      "path": "references/videos/9683576m0.md",
+      "sha256": "506f305e1718ac55457bfff7af9abc2ce712612f4eb4466f8bf4bcf400b0156c",
+      "model_ids": [
+        "muse-video-ext"
+      ]
+    },
+    {
+      "id": "9683577m0",
+      "title": "Suno 音乐生成与角色风格",
+      "kind": "music",
+      "url": "https://docs-api.onemini.top/9683577m0.md",
+      "path": "references/music/9683577m0.md",
+      "sha256": "3c75864b6121e775e8b81eb4b4949592b2ee078977d83b8eaa18c8ba1d133399",
+      "model_ids": [
+        "suno"
+      ]
+    },
+    {
+      "id": "9683578m0",
+      "title": "Flowmusic 音乐生成",
+      "kind": "music",
+      "url": "https://docs-api.onemini.top/9683578m0.md",
+      "path": "references/music/9683578m0.md",
+      "sha256": "d0fd3f1cffe3ca6d5f3d24f81129d8e6485ecb93702773a270b92412b46410db",
+      "model_ids": [
+        "flowmusic"
+      ]
+    }
+  ]
+}
