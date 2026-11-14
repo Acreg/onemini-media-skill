@@ -23,6 +23,36 @@
 
 支持文件式 `SKILL.md` 的智能体可以使用；不同产品的自动发现目录不同，以该产品说明为准。**仓库根目录本身就是技能根目录**，安装后的文件夹建议命名为 `onemini-media`，不要只复制 SKILL.md。
 
+### 推荐：Python 两步安装
+
+只需 **Python 3.10+**，无需 Git、Node.js 或 pip。在准备安装时使用的**任意空目录**打开终端，不必进入仓库或项目根目录。
+
+**第一步：下载安装器。**
+
+```sh
+python -c "import urllib.request; urllib.request.urlretrieve('https://raw.githubusercontent.com/Acreg/onemini-media-skill/main/install.py', 'install-onemini.py')"
+```
+
+**第二步：指定自己的智能体 skills 父目录。** Windows 示例（请替换成你的实际目录）：
+
+```sh
+python install-onemini.py --目录 "D:/智能体工具/我的 Skills"
+```
+
+`--目录` 填的是 **skills 父目录，不是 `onemini-media` 自身**；上例会安装到 `D:/智能体工具/我的 Skills/onemini-media`。
+
+macOS / Linux 可将第二步换成以下示例；`$HOME/.agents/skills` **不是所有智能体的默认目录**，以你自己的智能体技能目录为准：
+
+```sh
+python install-onemini.py --目录 "$HOME/.agents/skills"
+```
+
+若系统使用 `python3` 命令，请将两步中的 `python` 都换成 `python3`。
+
+安装器固定下载公开 Release 的 **v0.1.0 ZIP** 并校验 **SHA-256**，不是自动安装最新版。安装无需 Key，不调用收费接口，也没有解锁步骤。首次安装会创建 `【务必安全使用不要打印出来】.env`，**不需再手动初始化**；重新安装会保留已有 `.env` 和用户其他文件。按下一节在本地填好配置后，**重载智能体**以发现技能。
+
+### 手动选项：Git 或 ZIP
+
 手动方式：进入你的智能体技能目录后执行：
 
 ```sh
@@ -209,6 +239,7 @@ python scripts/sync_docs.py 更新 --确认
 ```text
 SKILL.md                  给智能体的短入口
 README.md                 安装和使用说明
+install.py                固定 v0.1.0 的 Python 独立安装器
 docs-manifest.json        来源、快照时间、正文摘要、型号映射
 references/models.md      完整精确型号索引
 references/images/        图片参数原文
